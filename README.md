@@ -1,0 +1,2 @@
+# docker-openresty-compile - Docker compilation/packaging image for OpenResty modules
+`docker-openresty-compile` is Docker images built specially for compiling and packaging OpenResty modules in .rpm format.
