@@ -25,6 +25,6 @@ jobs:
         name: Build and push
         uses: docker/build-push-action@v3
         with:
-          context: ./centos/7
+          context: ${{ github.workspace }}/centos/7
           push: true
           tags: manoaratefy/openresty-compile:centos-7
