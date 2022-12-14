@@ -24,9 +24,16 @@ jobs:
       - name: Check out the repo
         uses: actions/checkout@v2
 
-      - name: Build and push
+      - name: Build and push CentOS 7 image
         uses: docker/build-push-action@v3
         with:
           context: ${{ github.workspace }}/centos/7
           push: true
           tags: manoaratefy/openresty-compile:centos-7
+
+      - name: Build and push CentOS 8 image
+        uses: docker/build-push-action@v3
+        with:
+          context: ${{ github.workspace }}/centos/8
+          push: true
+          tags: manoaratefy/openresty-compile:centos-8
